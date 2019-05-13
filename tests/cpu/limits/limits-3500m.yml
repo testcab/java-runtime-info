@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: limits-3500m
+spec:
+  containers:
+    - name: java-runtime-info
+      image: testcab/java-runtime-info
+      resources:
+        limits:
+          cpu: 3500m
